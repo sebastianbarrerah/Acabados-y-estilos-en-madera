@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.mySwiper__acabados {
+    width: 100%;
+    height: 40rem;
+    background-color: aqua;
+
+    .swiper-wrapper {
+        height: 101%;
+
+        .slider__card {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .imagen__slider {
+                width: 100%;
+                height: 99%;
+                object-fit: cover;
+            }
+        }
+
+    }
+    .swiper-button-prev {
+        color: $Dark-red;
+    }
+
+    .swiper-button-next {
+        color: $Dark-red;
+    }
+
+    // barra completa
+    .swiper-pagination {
+
+        // bolitas inferiores
+        .swiper-pagination-bullet {
+            color: aqua;
+            background-color: black;
+            cursor: pointer;
+
+        }
+    }
+}

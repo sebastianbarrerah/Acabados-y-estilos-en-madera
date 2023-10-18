@@ -1,0 +1,46 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.container__location{
+    width: 80%;
+    display: flex;
+    margin: 0 10%;
+    padding: 90px 0;
+    .map__location{
+        width: 50%;
+        border-radius: 15px;
+        border: 2px solid $Dark-red;
+    }
+    .info__location{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .title__location{
+            text-align: center;
+            font-size: 45px;
+            width: 90%;
+            margin-bottom: 20px;
+            color: $Dark-red;
+        }
+        .address{
+            font-size: 22px;
+        }
+        .cel__location{
+            font-size: 22px;
+        }
+        .tel__location{
+            font-size: 22px;
+        }
+        .week__location{
+            font-size: 22px;
+        }
+        .hours__location{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px;
+            border-bottom: 1px solid;
+        }
+    }
+}

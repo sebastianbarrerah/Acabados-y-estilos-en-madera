@@ -1,0 +1,94 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    .header__figure{
+        width: auto;
+        margin: 10px 40px;
+        .header__figure--img{
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+    .header__nav{
+        width: 50%;
+        padding: 0 15px;
+        display: flex;
+        .header__ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-self: center;
+            list-style-type: none;
+            .header__ul--li{
+                font-size: 18px;
+                .nav__ancora{
+                    text-decoration: none;
+                    color: black;
+                    .icon__expand{
+                        cursor: pointer;
+                        width: 10px;
+                    }
+                }
+                
+                .header__servicios{
+                    position: absolute;
+                    top: 11%;
+                    left: 53%;
+                    width: 20%;
+                    height: auto;
+                    background-color: rgb(198, 198, 198);
+                    border-radius: 10px;
+                    visibility: hidden;
+                    transition: opacity 0.5s ease, visibility 0.3s ease; 
+                    z-index: 999;
+                    .servicios__ul{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+                        .header__li--servicios{
+                            font-size: 20px;
+                            width: 100%;
+                            .ancora--servicios{
+                                text-decoration: none;
+                                color: black;
+                                border-bottom: 1px solid $Dark-red;
+                                padding: 0px 10px;
+                                text-align: center;
+                                margin-bottom: 15px;
+                                padding-bottom: 5px;
+                                display: block;
+                            }
+                            .ancora--servicios:hover{
+                                color: $red;
+                                background-color: rgb(219, 216, 216);
+                            }
+                        }
+                    }
+                }
+                .header__servicios:hover{
+                    visibility: visible !important;
+                }
+                .nav__ancora:hover{
+                    color: $Dark-red;
+                    font-weight: bold;
+                    text-decoration:underline;
+                }
+                .lista__servicios:hover + .header__servicios{
+                    visibility: visible;
+                }
+            }
+        }
+        
+    }
+
+    .active__header{
+        text-decoration: solid underline $Dark-red 4px!important;
+    }
+  
+}

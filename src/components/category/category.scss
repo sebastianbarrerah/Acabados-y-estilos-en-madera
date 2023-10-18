@@ -1,0 +1,36 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.container__category{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    padding: 50px 0;
+    .category__icons{
+        display: flex;
+        justify-content: space-evenly;
+        .card__icons{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            width: 15%;
+            cursor: pointer;
+            padding: 5px;
+            .description__category{
+                font-size: 20px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }   
+        .card__icons:hover{
+            background-color: $gray;
+            border-radius: 10px;
+        }
+    }
+    .active{
+        background-color: $gray;
+        border-radius: 10px;
+    }
+}

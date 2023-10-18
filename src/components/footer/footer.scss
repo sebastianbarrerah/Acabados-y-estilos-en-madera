@@ -1,0 +1,68 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+
+.footer {
+    background-color: $gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+
+    .footer__navegacion {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        .footer__ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+
+            .footer__li {
+                list-style: none;
+                width: 45%;
+
+                .ancora__footer {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .container__footer {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        .footer__logo {
+            width: 100px;
+            height: 50px;
+        }
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        gap: 20px;
+        align-self: center;
+        color: white;
+    }
+
+    .footer__derechos {
+        width: 100%;
+        border-top: 1px solid white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        color: white;
+    }
+}

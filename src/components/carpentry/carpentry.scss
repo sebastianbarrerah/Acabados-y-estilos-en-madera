@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.container__carpentry{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .carpentry__tones{
+        width: 50%;
+        background-color: aqua;
+        height: 45rem;
+        padding: 0 20px;
+        .title__carpentry{
+            color: red;
+            font-size: 50px;
+            border-bottom: 1px solid red;
+        }
+        .container__tones{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .card__tones{
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+                .img__tones{
+                    width: 85%;
+                }
+                .img__tones:hover{
+                    translate: 2s ease initial;
+                    cursor: pointer;
+                    background-color: blue;
+                }
+            }
+        }
+    }
+    .carpetry__products{
+        width: 50%;
+        background-color: rgb(190, 194, 84);
+        height: 45rem;
+        padding: 0 20px;
+    }
+}

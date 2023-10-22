@@ -12,7 +12,7 @@ import Contact from '../components/contact/Contact'
 const Home = () => {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <Slider/>
     <OurCompany/>
     <Category/>

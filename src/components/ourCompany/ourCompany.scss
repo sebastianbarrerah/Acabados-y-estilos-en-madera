@@ -37,3 +37,18 @@
         color: white;
     }
 }
+
+@media(max-width: 600px){
+    .container__company{
+       width: 100%;
+       padding: 0px;
+       margin: 0;
+        .text__company{
+           width: 95%;
+
+        }
+        .company__ours{
+            width: auto;
+        }
+    }
+}

@@ -66,3 +66,40 @@
         color: white;
     }
 }
+
+@media (max-width:600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        .footer__navegacion{
+            width: 100%;
+            .footer__ul{
+                .footer__li{
+                    width: 100%;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .container__footer{
+            margin-bottom: 25px;
+            height: 30px;
+        }
+
+        .footer__info{
+            display: flex;
+            flex-direction: row;
+            align-self: flex-start;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom:10px;
+            .direccion{
+                display: none;
+            }
+            .item__footer{
+                width: auto;
+            }
+        }
+    }
+}

@@ -65,3 +65,23 @@
         }
     }
 }
+
+
+@media(max-width: 600px){
+   .container__form{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+    .title__contact{
+        font-weight: 500;
+    }
+    .form__contact{
+        width: 95%;
+        padding: 40px 10px;
+        .btn__contacto{
+            width: 50%;
+            align-self: center;
+        }
+    }
+   }
+}

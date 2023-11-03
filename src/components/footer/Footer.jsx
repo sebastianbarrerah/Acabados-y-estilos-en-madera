@@ -25,7 +25,7 @@ const Footer = () => {
             <span className="item__footer">
                 3115478562
             </span>
-            <span className="item__footer">
+            <span className="item__footer direccion">
                 direccion
             </span>
             <span className="item__footer">

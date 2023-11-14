@@ -1,6 +1,7 @@
 import React from 'react'
 import './carpentry.scss'
 import { colorTones } from './hookTones'
+import SlideProducts from '../slide/slideProducts'
 
 const Carpentry = () => {
 
@@ -22,7 +23,7 @@ const Carpentry = () => {
       </article>
 
       <article className="carpetry__products">
-        <h1>chao</h1>
+        <SlideProducts />
       </article>
     </section>
   )

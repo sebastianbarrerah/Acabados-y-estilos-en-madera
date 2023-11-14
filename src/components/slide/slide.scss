@@ -1,0 +1,51 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.mySwiper__products{
+    width: 100%;
+    height: 100%;
+    .slider__products{
+        .pagination{
+            .bullet{
+                color: aqua;
+                background-color: brown;
+            }
+        }
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .products__title{
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .img__slider{
+            width: 100%;
+            height: 50%;
+            padding-bottom: 20px;
+        }
+        .products__parrafo{
+            font-size: 19px;
+        }
+        .products__btn{
+            padding: 8px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: $red;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        .products__btn:hover{
+            border: none;
+            border: 1px solid $red;
+            background-color: transparent;
+            align-items: center;
+            align-self: center;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}

@@ -91,6 +91,9 @@
         text-decoration: solid underline $Dark-red 4px!important;
     }
 
+    .burger-icon1{
+        display: none;
+    }
     .burger__icon{
         display: none;
     }
@@ -114,6 +117,10 @@
             display: flex;
             justify-content: center;
             margin-left: 5px;
+        }
+
+        .burger-icon1{
+            display: block;
         }
 
         .burger__icon{

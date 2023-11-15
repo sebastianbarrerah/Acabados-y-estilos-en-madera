@@ -9,7 +9,6 @@ const Header = () => {
     const navigate = useNavigate()
     const toggleMenu = () => {
         setOpenMenu(true)
-        console.log("funciona");
     }
     return (
         <header className='header'>
@@ -41,7 +40,7 @@ const Header = () => {
                     <li className='header__ul--li'><a href="" className='nav__ancora'>Contacto</a></li>
                 </ul>
             </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" height="44" viewBox="0 -960 960 960" width="44" fill='#BB1F25' onClick={toggleMenu}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" className='burger__icon' /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="44" viewBox="0 -960 960 960" width="44" fill='#BB1F25' onClick={toggleMenu} className='burger-icon1'><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" className='burger__icon' /></svg>
 
             <section className={` menu ${openMenu? "active" : ""}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="44" viewBox="0 -960 960 960" width="44" fill='#BB1F25' className='close' onClick={() => setOpenMenu(false)} ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg>

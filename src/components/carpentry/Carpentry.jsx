@@ -29,4 +29,4 @@ const Carpentry = () => {
   )
 }
 
-export default Carpentry
+export default Carpentry;

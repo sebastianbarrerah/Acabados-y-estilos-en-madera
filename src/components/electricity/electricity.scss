@@ -1,0 +1,56 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/reset.scss";
+
+.electricity__container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    .figure__initial{
+        width: 50%;
+        height: 20rem;
+        margin: 0;
+        .img__initial{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .electricity__info{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 26px;
+        align-self: flex-start;
+        .electricity__title{
+            width: 100%;
+            padding: 10px;
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .electricity__p{
+            text-align: center;
+        }
+
+    }
+    .electricity__description{
+        width: 40%;
+        text-align: center;
+        font-weight: 700;
+        color: #BB1F25;
+        padding: 0 26px;
+        align-self: flex-end;
+    }
+    .figure__secundary{
+        width: 50%;
+        height: 20rem;
+        margin: 0;
+        .img__secundary{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

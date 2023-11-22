@@ -4,13 +4,14 @@
 .mySwiper__products{
     width: 100%;
     height: 100%;
+    .swiper-button-prev {
+        color: $red;
+    }
+
+    .swiper-button-next {
+        color: $red;
+    }
     .slider__products{
-        .pagination{
-            .bullet{
-                color: aqua;
-                background-color: brown;
-            }
-        }
         width: 100%;
         height: 100%;
         display: flex;

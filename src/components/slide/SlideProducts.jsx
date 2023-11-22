@@ -1,5 +1,5 @@
 import React from 'react'
-import './slide.scss'
+import './styleProducts.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 

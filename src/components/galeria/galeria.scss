@@ -1,0 +1,48 @@
+@import '../../assets/styles/reset.scss';
+@import '../../assets/styles/variables.scss';
+
+
+    .galeria__imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.738);
+        width: 100%;
+        height: 100vh;
+        .imagen__galeria0{
+            width: 60%;
+            height: 60vh;
+            margin: 20vh 20%;
+            opacity: 100%;
+        }
+        .imagen__galeria1{
+            width: 60%;
+            height: 60vh;
+            margin: 20vh 20%;
+            opacity: 100%;
+            scale: 0;
+        }
+        .imagen__galeria2{
+            width: 60%;
+            height: 60vh;
+            margin: 20vh 20%;
+            opacity: 100%;
+            scale: 0;
+        }
+        .imagen__galeria3{
+            width: 60%;
+            height: 60vh;
+            margin: 20vh 20%;
+            opacity: 100%;
+            scale: 0;
+        }
+        .imagen__galeria4{
+            width: 60%;
+            height: 60vh;
+            margin: 20vh 20%;
+            opacity: 100%;
+            scale: 0;
+        }
+        .imagen__galeria1:target{
+            transform: scale(1);
+        }
+    }

@@ -44,4 +44,24 @@ export const colorTones = [
         photo: "https://tiendaonline.impormaderasltda.com/wp-content/uploads/2019/08/SO%CC%88DER-300x300.jpg",
         description: "util para muebles, cocinas, closests, baños, etc7",
     },
+    {
+        title: "MDF Melaminico primacor",
+        photo: "https://carpincentro.com/cdn/shop/products/Melaminas-primadera-caoba_8577a474-126e-448f-bbc2-8e458e3c29bd_220x.jpg?v=1586113098",
+        description: "util para muebles, cocinas, closests, baños, etc7",
+    },
+    {
+        title: "MDF Melaminico duratex",
+        photo: "https://tiendaonline.impormaderasltda.com/wp-content/uploads/2019/08/SO%CC%88DER-300x300.jpg",
+        description: "util para muebles, cocinas, closests, baños, etc7",
+    },
+    {
+        title: "MDF Melaminico primacor",
+        photo: "https://carpincentro.com/cdn/shop/products/Melaminas-primadera-caoba_8577a474-126e-448f-bbc2-8e458e3c29bd_220x.jpg?v=1586113098",
+        description: "util para muebles, cocinas, closests, baños, etc7",
+    },
+    {
+        title: "MDF Melaminico duratex",
+        photo: "https://tiendaonline.impormaderasltda.com/wp-content/uploads/2019/08/SO%CC%88DER-300x300.jpg",
+        description: "util para muebles, cocinas, closests, baños, etc7",
+    },
 ]

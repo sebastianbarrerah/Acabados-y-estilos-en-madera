@@ -1,0 +1,161 @@
+@import '../../assets/styles/reset.scss';
+@import '../../assets/styles/variables.scss';
+
+.container__budget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    .info__budge{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title__budge{
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+            color: red;
+        }
+        .parrafo__budge{
+            text-align: center;
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .container__form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        .form__budget{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 5%;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .label__text{
+                font-size: 22px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .select__input{
+                    width: 60%;
+                    height: 25px;
+                    border-radius: 5px;
+                    color: $Dark-red;
+                    padding: 2px 6px;
+                    option:checked{
+                        background-color: $red;
+                        font-size: 19px;
+                        color: black;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    option{
+                        font-size: 20px;
+                        color: $Dark-red;
+                        cursor: pointer;
+                    }
+                    option:hover{
+                        background-color: aqua;
+                    }
+                }
+            }
+        }
+        .mySwiper__budge{
+            width: 40%;
+            background-color: chartreuse;
+            .swiper-button-prev {
+                color: $red;
+            }
+        
+            .swiper-button-next {
+                color: $red;
+            }
+            .swiperSlider__budget{
+                width: 40%;
+            }
+
+            .img__slider{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .budget__btn{
+        width: 50%;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-around;
+        .btn__budget{
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 30%;
+            border: none;
+            cursor: pointer;
+            background-color: $red;
+            color: white;
+            font-size: 18px;
+        }
+        .btn__budget:hover{
+            background-color: gray;
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container__budget{
+        background-image: url("https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000");
+        height: 100vh;
+        .info__budge{
+            margin: 15px 0;
+            .parrafo__budge{
+                color: white;
+            }
+        }
+        .container__form{
+            margin: 0;
+            display: block;
+            .form__budget{
+                width: 100%;
+                margin: 0;
+                .label__text{
+                    font-size: 28px;
+                    font-weight: 500;
+                    .select__input{
+                        height: 35px;
+                        option:checked{ 
+                            font-size: 18px;
+                            font-weight: 100;
+                        }
+                        option{
+                            font-size: 18px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+            .mySwiper__budge{
+                display: none;
+            }
+        }
+        .budget__btn{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            .btn__budget{
+                width: 40%;
+            }
+        }
+    }
+}

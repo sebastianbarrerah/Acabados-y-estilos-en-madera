@@ -1,0 +1,92 @@
+@import '../../assets/styles/reset.scss';
+@import '../../assets/styles/variables.scss';
+
+.container__driwall{
+    margin-top: 40px;
+    padding: 20px;
+    .div__title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        color: red;
+        border-bottom: 2px solid red;
+        .title__driwall{
+            width: 60%;
+            font-size: 50px;
+            margin: 0;
+        }
+        .title__driwall1{
+            width: 55%;
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+
+    .container__options{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        .option{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .option__title{
+                padding: 15px;
+                border: 1px solid;
+                width: 120px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                background-color: $Dark-red;
+                color: white;
+                border: none;
+            }
+        }
+        .one{
+            padding-left: 50px;
+        }
+        .two{
+            padding-left: 100px;
+        }
+        .three{
+            padding-left: 150px;
+        }
+        .four{
+            padding-left: 150px;
+        }
+        .five{
+            padding-left: 100px;
+        }
+        .six{
+            padding-left: 50px;
+        }
+        .image__job{
+            display: flex;
+            gap: 5px;
+            overflow-x: scroll;
+            border: 2px solid $red;
+            border-radius: 10px;
+            
+            &::-webkit-scrollbar {
+                height: 15px;
+                cursor: pointer;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(93, 101, 95);
+                border-radius: 6px; 
+                cursor: pointer;
+              }
+          
+              &::-webkit-scrollbar-track {
+                background-color: rgb(218, 218, 196); 
+                border-radius: 10px;
+              } 
+           .img__job{
+                width: 150px;
+                height: 150px;
+           }
+        }
+    }
+}

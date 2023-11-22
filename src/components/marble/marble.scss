@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/reset.scss';
+
+.marble__container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    .placas__container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: auto;
+        margin: 0;
+        gap: 30px;
+        .placas{
+            width: 20%;
+            border-radius: 50%;
+        }
+    }
+
+    .container__marble--title{
+        padding: 20px;
+        text-align: center;
+        background-image: url("https://mymrecubrimientos.com.mx/cdn/shop/products/CARRARA.jpg?v=1611344245");
+        margin: 0;
+        width: 70%;
+        align-self: center;
+        border-radius: 1px solid;
+        .marble__title{
+            font-size: 50px;
+            color: $red;
+        }
+    }
+
+    .description__marble{
+        display: flex;
+        gap: 50px;
+        font-weight: bold;
+        color: $red;
+        .marble__description--1{
+            font-size: 20px;
+            text-align: center;
+            padding: 0 20px;
+            border: 1px solid $red;
+            border-radius: 10px;
+            color: black;
+            line-height: 30px;
+        }
+        .marble__description--2{
+            font-size: 20px;
+            text-align: center;
+            padding: 0 20px;
+            border: 1px solid $red;
+            border-radius: 10px;
+            color: black;
+            line-height: 30px;
+        }
+    }
+}

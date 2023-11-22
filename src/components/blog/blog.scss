@@ -1,0 +1,213 @@
+@import "../../assets/styles/reset.scss";
+@import "../../assets/styles/variables.scss";
+
+.container__blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  .burbuja1 {
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja1::after{
+    content: "Carpinteria";
+  }
+
+  .burbuja1:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(81, 0, 255);
+    background-image: linear-gradient(15deg, white, $red, white);
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+  }
+
+
+  .burbuja2 {
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja2::after{
+    content: "Electricidad";
+  }
+  .burbuja2:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(0, 255, 17);
+    cursor: pointer;
+    font-size: 25px;
+    background-image: linear-gradient(80deg, white, $red, white);
+    color: white;
+    font-weight: bold;
+
+  }
+
+
+  .burbuja3 {
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja3::after{
+    content: "Marmol";
+  }
+  .burbuja3:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(255, 13, 0);
+    cursor: pointer;
+    font-size: 25px;
+    background-image: linear-gradient(20deg, white, $red, white);
+    color: white;
+    font-weight: bold;
+
+  }
+
+  .burbuja4 {
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja4::after{
+    content: "Vitrinas";
+  }
+  .burbuja4:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(0, 255, 238);
+    cursor: pointer;
+    font-size: 25px;
+    background-image: linear-gradient(45deg, white, $red, white);
+    color: white;
+    font-weight: bold;
+
+  }
+
+  .burbuja5 {
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja5::after{
+    content: "Contrucción";
+  }
+  .burbuja5:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(33, 61, 35);
+    cursor: pointer;
+    font-size: 25px;
+    background-image: linear-gradient(35deg, white, $red, white);
+    color: white;
+    font-weight: bold;
+
+  }
+
+  .burbuja6 {
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burbuja6::after{
+    content: "Drywall";
+  }
+  .burbuja6:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgb(0, 255, 17);
+    cursor: pointer;
+    font-size: 25px;
+    background-image: linear-gradient(58deg, white, $red, white);
+    color: white;
+    font-weight: bold;
+
+  }
+  .title__blog {
+    text-align: center;
+    grid-column: span 3;
+    font-size: 55px;
+    text-decoration: underline;
+    color: red;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__blog {
+    display: flex;
+    flex-direction: column;
+    .burbuja1 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+    .burbuja2 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+    .burbuja3 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+    .burbuja4 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+    .burbuja5 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+    .burbuja6 {
+      height: 3rem;
+      background: transparent;
+      border: 1px solid red;
+    }
+  }
+}

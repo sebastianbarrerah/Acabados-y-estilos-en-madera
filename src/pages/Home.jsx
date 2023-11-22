@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import Slider from '../components/slider/Slider'
+import Slider from '../components/sliderHome/Slider'
 import OurCompany from '../components/ourCompany/OurCompany'
 import Category from '../components/category/Category'
 import WeDo from '../components/weDo/WeDo'
@@ -12,7 +12,6 @@ import Contact from '../components/contact/Contact'
 const Home = () => {
   return (
     <>
-    {/* <Header/> */}
     <Slider/>
     <OurCompany/>
     <Category/>

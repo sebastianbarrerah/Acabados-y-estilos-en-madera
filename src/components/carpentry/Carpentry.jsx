@@ -1,7 +1,8 @@
 import React from 'react'
 import './carpentry.scss'
 import { colorTones } from './hookTones'
-import SlideProducts from '../slide/slideProducts'
+import SlideProducts from '../slide/SlideProducts'
+
 
 const Carpentry = () => {
 

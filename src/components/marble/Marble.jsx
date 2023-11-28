@@ -2,7 +2,7 @@ import React from 'react'
 import './marble.scss'
 const Marble = () => {
   return (
-    <section className="marble__container">
+    <section className="marble__container" id='Marmol'>
         <figure className="placas__container">
             <img src="https://www.tinostone.com/wp-content/uploads/2017/03/calacatta-1-500x500.jpg" alt="" className="placas" />
 

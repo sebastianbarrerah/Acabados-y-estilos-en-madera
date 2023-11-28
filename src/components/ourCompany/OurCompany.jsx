@@ -1,7 +1,9 @@
 import React from 'react'
 import './ourCompany.scss'
+import {useNavigate} from 'react-router-dom'
 
 const OurCompany = () => {
+  const navigate = useNavigate()
   return (
     <section className="container__company">
         <h1 className='title__company'>Acabados y estilos en madera</h1>

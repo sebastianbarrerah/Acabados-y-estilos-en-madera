@@ -132,7 +132,7 @@
         }
         .menu {
             border: 1px solid;
-            height: 80vh;
+            height: 95vh;
             width: 70vw;
             position: absolute;
             z-index: 2;
@@ -140,6 +140,8 @@
             background-color: $white-secundary;
             flex-direction: column;
             border-radius: 10px;
+            padding: 15px;
+            border: none;
 
             .close{
                 align-self: flex-end;
@@ -147,7 +149,7 @@
             }
             .title__burger{
                 font-size: 35px;
-                color: $Dark-red;
+                color: red;
                 align-self: center;
             }
             .ul__burger{
@@ -189,6 +191,7 @@
                 color: $red;
                 align-self: center;
                 padding-top: 10px;
+                text-align:center;
             }
         }
     }

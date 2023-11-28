@@ -2,7 +2,7 @@ import React from 'react'
 import './driwall.scss';
 const Driwall = () => {
   return (
-    <section className="container__driwall">
+    <section className="container__driwall" id='drywall'>
       <div className="div__title">
         <h1 className="title__driwall">Driwall y</h1>
         <h1 className="title__driwall1">obra blanca</h1>

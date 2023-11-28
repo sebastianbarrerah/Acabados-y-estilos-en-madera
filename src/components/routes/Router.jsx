@@ -3,15 +3,21 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from '../../pages/Home';
 import Carpenter from '../../pages/Carpenter';
 import Header from '../header/Header';
-import Galeria from '../galeria/Galeria';
+import Media from '../../pages/Media';
+import Multimedia from '../../pages/Multimedia';
+import Quote from '../../pages/Quote';
+import Contact from '../contact/Contact';
 const Router = () => {
   return (
     <BrowserRouter>
     <Header/>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/Carpinteria' element={<Carpenter/>} />
-        <Route path='/galeria' element={<Galeria/>} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Servicios' element={<Carpenter/>} />
+        <Route path='/Blog' element={<Media/>} />
+        <Route path='/Galeria' element={<Multimedia/>} />
+        <Route path='/Cotizacion' element={<Quote/>} />
+        <Route path='/contacto' element={<Contact/>} />
       </Routes>
     </BrowserRouter>
   )

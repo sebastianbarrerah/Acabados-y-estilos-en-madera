@@ -8,22 +8,23 @@ const Blog = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  const irBlog = (e) => {
-   const desgloce = e.target.childNodes;
-   const array = []
-   let numeroHijos = Object.keys(desgloce).length;
-   for (let i = 0; i < numeroHijos; i++) {
-    const element = desgloce[i].src;
-    array.push(element)
+  const irBlog = (e, imagen) => {
+  e.preventDefault()
+  console.log("esto es imagen tiene que ser el array", imagen);
+  
+    dispatch(saveUrl(imagen))
+    navigate('/galeria');
   }
-  console.log(array, 'esto es array');
-   navigate('/galeria');
-   dispatch(saveUrl(array))
-   console.log('listo, yas se mandaron los datos', array);
-  }
+  
+  const url1 = "https://hips.hearstapps.com/hmg-prod/images/cocina-de-madera-maisons-du-monde-1620300784.jpg?crop=1xw:0.639763779527559xh;center,top&resize=1200:*"
+  const url2 = "https://serveiestacio.com/blog/wp-content/uploads/2021/04/herramientas-de-carpinteria_seveiestaci.jpg"
+
+  const url3 = "https://www.reformasenmurcia.net/wp-content/uploads/2022/04/Carpinteri%CC%81a-en-Madera.jpg"
+
+  const url4 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTIFgJXtPMztuBkSSNlPH2NGf-abnwCPCiKA&usqp=CAU"
   return (
     <section className='container__blog'>
-      <div className="burbuja1" onClick={(img) => {irBlog(img)}}>
+      <div className="burbuja1" onClick={(e) => {irBlog(e, [url1, url2, url3, url4])}}>
         <img src="https://hips.hearstapps.com/hmg-prod/images/cocina-de-madera-maisons-du-monde-1620300784.jpg?crop=1xw:0.639763779527559xh;center,top&resize=1200:*" alt="" style={{display: "none"}} />
         <img src="https://hips.hearstapps.com/hmg-prod/images/cocina-de-madera-maisons-du-monde-1620300784.jpg?crop=1xw:0.639763779527559xh;center,top&resize=1200:*" alt="" style={{display: "none"}} />
 

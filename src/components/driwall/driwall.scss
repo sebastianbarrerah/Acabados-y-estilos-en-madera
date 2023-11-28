@@ -90,3 +90,52 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    .container__driwall{
+        .div__title{
+            display: flex;
+            justify-content: center;
+            .title__driwall{
+                font-size: 50px;
+            }
+            .title__driwall1{
+                font-size: 50px;
+                width: 100%;
+            }
+        }
+        .container__options{
+            .option{
+                padding: 10px;
+                width: 100%;
+                .option__title{
+                    width: 40%;
+                }
+                .option__description{
+                    width: 60%;
+                }
+            }
+           .one{
+                padding: 0;
+           }
+           .two{
+                padding: 0;
+           }
+           .three{
+                padding: 0;
+           }
+           .four{
+                padding: 0;
+           }
+           .five{
+                padding: 0;
+           }
+           .six{
+                padding: 0;
+           }
+           .image__job{
+            margin: 0;
+           }
+        }
+    }
+}

@@ -54,3 +54,33 @@
     }
 
 }
+
+@media(max-width: 500px){
+    .electricity__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 95%;
+        .figure__initial{
+            display: none;
+        }
+        .electricity__info{
+            width: 95%;
+            padding: 10px;
+            .electricity__title{
+                width: auto;
+                margin: 0;
+            }
+        }
+        .electricity__description{
+            width: 95%;
+            padding: 10px;
+        }
+        .figure__secundary{
+            width: 95%;
+            height: 100%;
+            padding: 10px;
+        }
+    }
+}

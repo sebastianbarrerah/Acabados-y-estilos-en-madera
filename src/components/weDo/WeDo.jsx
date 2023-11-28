@@ -2,8 +2,10 @@ import React from 'react'
 import './wedo.scss'
 import { useState, useEffect } from 'react'
 import { dataCategory } from './dataCategoryHook'
+import {useNavigate} from 'react-router-dom'
 
 const WeDo = ({elementSelect}) => {
+    const navigate = useNavigate()
     const [seleccionado, setSeleccionado] = useState()
     const [hola, setHola] = useState()
     let key = elementSelect;
@@ -15,6 +17,13 @@ const WeDo = ({elementSelect}) => {
             }
         }
     },[elementSelect])
+
+    const irCotizacion = () => {
+        navigate("/Cotizacion")
+    }
+    const irVermas = () => {
+        navigate("/Blog")
+    }
 
     return (
         <div className='container__create'>
@@ -53,8 +62,8 @@ const WeDo = ({elementSelect}) => {
             </div>
 
             <div className="btns__create">
-                <button className="btn__cotizacion">Cotización</button>
-                <button className="btn__create--mas">Ver más</button>
+                <button className="btn__cotizacion" onClick={navigate(irCotizacion)}>Cotización</button>
+                <button className="btn__create--mas" onClick={navigate(irVermas)}>Ver más</button>
             </div>
             
         </div>

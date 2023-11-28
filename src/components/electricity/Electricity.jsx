@@ -3,7 +3,7 @@ import './electricity.scss';
 
 const Electricity = () => {
   return (
-    <section className="electricity__container">
+    <section className="electricity__container" id='Electricidad'>
         <figure className="figure__initial">
             <img src="https://electricidadindustrialsite.files.wordpress.com/2017/04/x.jpg?w=1170" alt="" className="img__initial" />
         </figure>

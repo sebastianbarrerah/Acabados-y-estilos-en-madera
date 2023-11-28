@@ -58,3 +58,18 @@
         }
     }
 }
+
+.marble__container{
+    .container__marble--title{
+        width: 95%;
+        border-radius: 15px;
+        .marble__title{
+            border-bottom: 2px solid red;
+        }
+    }
+    .description__marble{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

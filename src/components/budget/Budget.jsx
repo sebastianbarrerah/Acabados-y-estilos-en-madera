@@ -2,13 +2,25 @@ import React from 'react';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './budget.scss'
+import Swal from 'sweetalert2';
+import {  useNavigate } from 'react-router-dom'
 
 const Budget = () => {
+const navigate = useNavigate()
+    const cita = () => {
+        Swal.fire({ 
+            text: "Rellena el formulario y nos contactaremos contigo muy pronto para confirmar fecha de la cita",
+            icon: "success"
+        })
+         navigate("/contacto")
+        
+    }
+
   return (
     <section className="container__budget">
         <aricle className="info__budge">
             <h1 className="title__budge">Cotización</h1>
-            <p className="parrafo__budge">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos error, quisquam praesentium nisi eligendi debitis. Aliquid ullam possimus ducimus optio!</p>
+            <p className="parrafo__budge">Esta cotización no refleja el precio real del trabajo pueden haber variables que incremete o disminuya el monto, estos datos son tomados con los precios actuales del mercado incluyendo materiales por lo tanto la cotizacion es un aproximado de lo que podria costar el servicio</p>
         </aricle>
 
         <article className="container__form">
@@ -43,13 +55,13 @@ const Budget = () => {
     
             <Swiper navigation={true} modules={[Navigation]}                 className="mySwiper__budge">
                 <SwiperSlide className='swiperSlider__budget'>
-                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="" className='img__slider'/>
+                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="imagen cocina" className='img__slider'/>
                 </SwiperSlide>
                 <SwiperSlide className='swiperSlider__budget'>
-                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="" className='img__slider'/>
+                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="imagen mueble" className='img__slider'/>
                 </SwiperSlide>
                 <SwiperSlide className='swiperSlider__budget'>
-                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="" className='img__slider'/>
+                    <img src="https://socoda.vteximg.com.br/arquivos/ids/175053-1000-1000/girona-cenizo-derecho-24-05-2022.jpg?v=637890045613730000" alt="imagen cajon" className='img__slider'/>
                 </SwiperSlide>
 
             </Swiper>
@@ -57,7 +69,7 @@ const Budget = () => {
         </article>
         <div className="budget__btn">
             <button className='btn__budget'>Cotizar</button>
-            <button className='btn__budget'>Programar cita</button>
+            <button className='btn__budget' onClick={cita}>Programar cita</button>
         </div>
     </section>
   )

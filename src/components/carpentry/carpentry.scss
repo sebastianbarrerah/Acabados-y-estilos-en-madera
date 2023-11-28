@@ -37,11 +37,53 @@
                     background-color: blue;
                 }
             }
+            .card__tones::after:hover{
+                content: "Algo";
+            }
         }
     }
     .carpetry__products{
         width: 50%;
         height: 45rem;
         padding: 0 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .container__carpentry{
+        display: flex;
+        flex-direction: column;
+        .carpentry__tones{
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            .card__tones{
+                width: 100%;
+
+                .title__carpentry{
+                    width: 100%;
+                    text-align: center;
+                }
+                .container__tones{
+                    width: 100%;
+                }
+            }
+            .card__tones::after{
+                content: "nombre";
+                position: relative;
+                bottom: 50%;
+            }
+        }
+        .carpetry__products{
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            .products__parrafo{
+                text-align: center;
+            }
+            .products__btn{
+                width: 60%;
+            }
+        }
     }
 }

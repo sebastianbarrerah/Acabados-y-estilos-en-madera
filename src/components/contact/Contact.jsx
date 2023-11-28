@@ -1,6 +1,6 @@
 import React from 'react';
 import {useForm} from 'react-hook-form'
-import './contact.scss';
+// import './contact.scss';
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom"
 

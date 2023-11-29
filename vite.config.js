@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // Cambia esto según tu configuración
+        target: 'https://acabados-y-estilos-en-madera.vercel.app/', // Cambia esto según tu configuración
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

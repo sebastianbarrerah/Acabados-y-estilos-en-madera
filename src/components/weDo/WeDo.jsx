@@ -7,7 +7,6 @@ import {useNavigate} from 'react-router-dom'
 const WeDo = ({elementSelect}) => {
     const navigate = useNavigate()
     const [seleccionado, setSeleccionado] = useState()
-    const [hola, setHola] = useState()
     let key = elementSelect;
     useEffect( () => {
         for (let i = 0; i < dataCategory.length; i++) {
@@ -31,7 +30,7 @@ const WeDo = ({elementSelect}) => {
             {/* derecho */}
             <div className="card__create">
                 <figure className="container__create--img">
-                    <img src={seleccionado?seleccionado.rightOne.image:null} alt={seleccionado?seleccionado.rightOne.alt:null} className="create__img" />
+                    <img src={seleccionado?seleccionado.rightOne.image:null} alt={seleccionado?seleccionado.rightOne.alt:null} className="create__img" onclick={irVermas}/>
                 </figure>
                 <div className="info__create">
                     <h3 className='title__create--div'>{seleccionado?seleccionado.rightOne.title:null}</h3>
@@ -42,7 +41,7 @@ const WeDo = ({elementSelect}) => {
             {/* reves */}
             <div className="card__create--reves">
                 <figure className="container__create--img">
-                    <img src={seleccionado?seleccionado.left.image:null} alt={seleccionado?seleccionado.left.alt:null} className="create__img" />
+                    <img src={seleccionado?seleccionado.left.image:null} alt={seleccionado?seleccionado.left.alt:null} className="create__img" onclick={irVermas}/>
                 </figure>
                 <div className="info__create">
                     <h3 className='title__create--div'>{seleccionado?seleccionado.left.title:null}</h3>
@@ -53,7 +52,7 @@ const WeDo = ({elementSelect}) => {
             {/* derecho */}
             <div className="card__create">
                 <figure className="container__create--img">
-                    <img src={seleccionado?seleccionado.rightTwo.image:null} alt={seleccionado?seleccionado.rightTwo.alt:null} className="create__img" />
+                    <img src={seleccionado?seleccionado.rightTwo.image:null} alt={seleccionado?seleccionado.rightTwo.alt:null} className="create__img" onclick={irVermas}/>
                 </figure>
                 <div className="info__create">
                     <h3 className='title__create--div'>{seleccionado?seleccionado.rightTwo.title:null}</h3>
@@ -62,12 +61,10 @@ const WeDo = ({elementSelect}) => {
             </div>
 
             <div className="btns__create">
-                <button className="btn__cotizacion" onClick={navigate(irCotizacion)}>Cotización</button>
-                <button className="btn__create--mas" onClick={navigate(irVermas)}>Ver más</button>
+                <button className="btn__cotizacion" onClick={irCotizacion}>Cotización</button>
+                <button className="btn__create--mas" onClick={irVermas}>Ver más</button>
             </div>
-            
         </div>
     )
 }
-
 export default WeDo;

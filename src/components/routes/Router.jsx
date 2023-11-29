@@ -9,7 +9,7 @@ import Quote from '../../pages/Quote';
 import Contact from '../contact/Contact';
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/https://acabados-y-estilos-en-madera-y1fk.vercel.app/">
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>

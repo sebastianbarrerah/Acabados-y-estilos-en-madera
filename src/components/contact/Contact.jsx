@@ -11,6 +11,7 @@ const Contact = () => {
     reset()
     console.log(data);
     Swal.fire({ 
+      title: `Bien hecho`,
       text: `Muy pronto nos contactaremos contigo ${data.Nombre}`,
       icon: "success"
   })

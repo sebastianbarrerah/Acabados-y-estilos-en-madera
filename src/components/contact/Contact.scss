@@ -1,87 +1,87 @@
-// @import "../../assets/styles/variables.scss";  
-// @import "../../assets/styles/reset.scss";
+@import "../../assets/styles/variables.scss";  
+@import "../../assets/styles/reset.scss";
 
-// .container__form {
-//     width: 90%;
-//     margin: 0 5%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin-bottom: 20px;
+.container__form {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 
-//     .title__contact {
-//         font-size: 40px;
-//         margin-bottom: 20px;
-//     }
+    .title__contact {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
 
-//     .form__contact {
-//         display: flex;
-//         flex-direction: column;
-//         width: 70%;
-//         padding: 40px 55px;
-//         background-color: rgb(188, 188, 188);
-//         gap: 30px;
-//         border-radius: 10px;
+    .form__contact {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 40px 55px;
+        background-color: rgb(188, 188, 188);
+        gap: 30px;
+        border-radius: 10px;
 
-//         .input__contact {
-//             height: 30px;
-//             border: none;
-//             border-radius: 11px;
-//             background-color: white;
-//             padding: 10px;
-//             font-size: 19px;
-//         }
+        .input__contact {
+            height: 30px;
+            border: none;
+            border-radius: 11px;
+            background-color: white;
+            padding: 10px;
+            font-size: 19px;
+        }
 
-//         .input__contact2 {
-//             border: none;
-//             border-radius: 11px;
-//             background-color: white;
-//             padding: 10px;
-//             font-size: 19px;
-//         }
+        .input__contact2 {
+            border: none;
+            border-radius: 11px;
+            background-color: white;
+            padding: 10px;
+            font-size: 19px;
+        }
 
-//         .btn__contacto {
-//             align-self: flex-start;
-//             width: 20%;
-//             padding: 10px 30px;
-//             font-size: 20px;
-//             background-color: rgb(44, 42, 42);
-//             color: white;
-//             cursor: pointer;
-//             border-radius: 10px;
-//             border: none;
-//         }
+        .btn__contacto {
+            align-self: flex-start;
+            width: 20%;
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color: rgb(44, 42, 42);
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+        }
 
-//         .btn__contacto:hover {
-//             background-color: $red;
-//             color: rgb(5, 5, 5);
-//         }
+        .btn__contacto:hover {
+            background-color: $red;
+            color: rgb(5, 5, 5);
+        }
 
-//         .required {
-//             color: #BB1F25;
-//             position: relative;
-//             left: 12px;
-//             bottom: 25px;
-//         }
-//     }
-// }
+        .required {
+            color: #BB1F25;
+            position: relative;
+            left: 12px;
+            bottom: 25px;
+        }
+    }
+}
 
 
-// @media(max-width: 600px){
-//    .container__form{
-//     width: 95%;
-//     margin: auto;
-//     margin-bottom: 40px;
-//     .title__contact{
-//         font-weight: 500;
-//     }
-//     .form__contact{
-//         width: 95%;
-//         padding: 40px 10px;
-//         .btn__contacto{
-//             width: 50%;
-//             align-self: center;
-//         }
-//     }
-//    }
-// }
+@media(max-width: 600px){
+   .container__form{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+    .title__contact{
+        font-weight: 500;
+    }
+    .form__contact{
+        width: 95%;
+        padding: 40px 10px;
+        .btn__contacto{
+            width: 50%;
+            align-self: center;
+        }
+    }
+   }
+}
